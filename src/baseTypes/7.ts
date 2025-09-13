@@ -13,9 +13,14 @@ enum Weekdays {
   Saturday
 };
 
-function isWeekend(day: Weekdays): boolean {
-  if (day === Weekdays.Sunday || day === Weekdays.Saturday) {
-    return false;
-  };
-  return true;
+
+const isWeekend = (day: Weekdays): boolean => {
+  return day === Weekdays.Sunday || day === Weekdays.Saturday ? true : false;
 };
+
+// function isWeekend(day: Weekdays): boolean {
+//   if (day === Weekdays.Sunday || day === Weekdays.Saturday) {
+//     return false;
+//   };
+//   return true;
+// };
